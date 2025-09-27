@@ -51,5 +51,5 @@ It supports:
 ## Swagger UI
 
 
-<img width="2992" height="3512" alt="localhost_8087_swagger-ui_index html" src="https://github.com/user-attachments/assets/dd52f814-e34e-4a11-8d9c-c78c8dd9185a" />
 
+<img width="2992" height="3964" alt="localhost_8087_swagger-ui_index html (1)" src="https://github.com/user-attachments/assets/0bbc451c-e2ea-470d-b3e9-ab9cce6bd16b" />
