@@ -48,6 +48,13 @@ It supports:
 | **POST**   | `/api/grades`                           | Record grade            | <pre>{<br> "enrollmentId":1,<br> "gradeType":"Final",<br> "gradeValue":"A",<br> "finalized":false<br>}</pre> |
 | **GET**    | `/api/grades/enrollment/{enrollmentId}` | Fetch grades per course | -  
 
+## File Import 
+
+| **Method** | **Endpoint** | **Description** | **Payload / Parameters** | **Response Example** |
+| ---------- | ------------ | --------------- | ----------------------- | ------------------ |
+| POST       | `/api/import` | Upload CSV file for large historical data import (asynchronous) | Multipart form-data: <br> **file**: CSV file to upload | `{ "respData": "job-id-1234", "respCode": 200, "respMsg": "File upload started" }` |
+| GET        | `/api/import/status/{jobId}` | Check status of a previously uploaded file import | Path parameter: <br> **jobId**: ID returned on file upload | `{ "respData": "Processed 150 rows", "respCode": 200, "respMsg": "Job status fetched" }` |
+
 ## Swagger UI
 
 
