@@ -19,7 +19,6 @@ public class SchoolManagementSystemApplication {
 	}
     @Bean
     public AuditorAware<String> auditorProvider() {
-        // Example: Replace with actual authentication context if using Spring Security
         return () -> Optional.ofNullable("SchoolAdmin");
     }
 }
